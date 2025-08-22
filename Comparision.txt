@@ -1,5 +1,0 @@
-A short comparison (1–2 paragraphs) discussing differences in results and performance.
-Best First Search (BFS) and A* Search are both informed search algorithms that use heuristics to guide the search process. BFS selects the next node to explore based solely on the heuristic estimate of the distance to the goal, without considering the cost already incurred. As a result, it may find a path quickly, but the path is not guaranteed to be the shortest, and the algorithm can get trapped exploring paths that seem promising but are actually suboptimal.
-
-In contrast, A* Search combines the heuristic estimate with the actual cost from the start node (using 
-), which ensures that it not only follows promising paths but also accounts for the total path cost. This makes A* both complete and optimal when an admissible heuristic is used. Performance-wise, A* often explores fewer nodes than Best First Search when the heuristic is good because it balances cost-so-far and estimated cost-to-goal, resulting in more efficient searches, although its computation per node can be slightly higher due to the additional cost calculations.
